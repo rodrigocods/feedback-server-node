@@ -4,8 +4,8 @@ import cors from 'cors';
 
 const app = express();
 
-app.use(cors);
-app.use(express.json()); // pro express entender que quero pegar o body das requisições
+app.use(cors());
+app.use(express.json());
 app.use(routes);
 
 app.listen(3333, () => {
